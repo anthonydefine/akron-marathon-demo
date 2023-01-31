@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akron Marathon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sass/main.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid" id="navWrapper">
+        <a class="navbar-brand" href="#">
+          <img src="images/AkronMarathonInShield_155x151.png" alt="" id="navImg" class="d-none d-lg-block ps-5">
+          <img src="images/smnavlogo.png" alt="" id="smnavImg" class="d-block d-lg-none">
+        </a>
+        <button class="btn bg-transparent border-0 d-block d-lg-none" onclick="mobileNav()">
+          <img src="images/icons8-menu-48.png" style="scale: .75;">
+        </button>
+        <ul class="navbar-nav text-uppercase d-none d-lg-inline-flex flex-wrap ms-5" id="navbarNav" style="max-width: 70%;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="racesMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Races</a>
+            <ul class="dropdown-menu" aria-labelledby="racesMenuLink">
+              <li><a class="dropdown-item" href="raceseries.html">Races series</a></li>
+              <li><a class="dropdown-item" href="#">Akron Marathon, Half Marathon & Team Relay</a></li>
+              <li><a class="dropdown-item" href="#">Kid's Fun Run</a></li>
+              <li><a class="dropdown-item" href="#">Half Marathon & 10K</a></li>
+              <li><a class="dropdown-item" href="#">8K & 1M</a></li>
+              <li><a class="dropdown-item" href="#">Results</a></li>
+              <li><a class="dropdown-item" href="#">Loyalty Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Train</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sponsor</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="involveMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Get Involved</a>
+            <ul class="dropdown-menu" aria-labelledby="involveMenuLink">
+              <li><a class="dropdown-item" href="#">Blue line block parties</a></li>
+              <li><a class="dropdown-item" href="#">Charity partners</a></li>
+              <li><a class="dropdown-item" href="#">volunteer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donate</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+            <ul class="dropdown-menu" aria-labelledby="contactMenuLink" id="contactdropdownmenu">
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+              <li><a class="dropdown-item" href="#">About us</a></li>
+              <li><a class="dropdown-item" href="#">Join our team</a></li>
+              <li><a class="dropdown-item" href="#">Tell us your story</a></li>
+              <li><a class="dropdown-item" href="#">Join our team</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <div class="bg-primary border-0 position-absolute hiddennav" id="mobilenavexpand">
+    <div class="list-group px-5 py-3">
+      <button type="button" class="list-group-item list-group-item-action">Race</button>
+        <div class="ps-5 py-2" style="font-size: smaller;">
+          <button type="button" class="list-group-item list-group-item-action">Train</button>
+          <button type="button" class="list-group-item list-group-item-action">Register</button>
+          <button type="button" class="list-group-item list-group-item-action">Sponsors</button>
+          <button type="button" class="list-group-item list-group-item-action">Get Involved</button>
+          <button type="button" class="list-group-item list-group-item-action">Store</button>
+          <button type="button" class="list-group-item list-group-item-action">Donate</button>
+          <button type="button" class="list-group-item list-group-item-action">Contact</button>
+        </div>
+      <button type="button" class="list-group-item list-group-item-action">Train</button>
+      <button type="button" class="list-group-item list-group-item-action">Register</button>
+      <button type="button" class="list-group-item list-group-item-action">Sponsors</button>
+      <button type="button" class="list-group-item list-group-item-action">Get Involved</button>
+      <div class="ps-5 py-2" style="font-size: smaller;">
+        <button type="button" class="list-group-item list-group-item-action">Blue Line Block Parties</button>
+        <button type="button" class="list-group-item list-group-item-action">Charity Partners</button>
+        <button type="button" class="list-group-item list-group-item-action">Volunteer</button>
+      </div>
+      <button type="button" class="list-group-item list-group-item-action">Store</button>
+      <button type="button" class="list-group-item list-group-item-action">Donate</button>
+      <button type="button" class="list-group-item list-group-item-action">Contact</button>
+        <div class="ps-5 py-2" style="font-size: smaller;">
+          <button type="button" class="list-group-item list-group-item-action">Contact Us</button>
+          <button type="button" class="list-group-item list-group-item-action">About Us</button>
+          <button type="button" class="list-group-item list-group-item-action">Join Our Team</button>
+          <button type="button" class="list-group-item list-group-item-action">Tells Us Your Story</button>
+          <button type="button" class="list-group-item list-group-item-action">News & Announcements</button>
+        </div>
+    </div>
+  </div>
+  <!--Landing Carousel-->
+  <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="carouselBig1">
+        <div class="p-5 one animate fadeInUp" id="carouselcap">
+          <h2 class="text-primary text-uppercase">run the blue line!</h2>
+          <p class="fs-6">FirstEnergy Akron Marathon, Half Marathon & Team Relay</p>
+        </div>
+      </div>
+      <div class="carousel-item" id="carouselBig2">
+        <div class="p-5 one animate fadeInUp" id="carouselcap">
+          <h2 class="text-primary text-uppercase">take the challenge!</h2>
+          <p class="fs-5 text-uppercase">National interstate 8k & 1-mile</p>
+        </div>
+      </div>
+      <div class="carousel-item" id="carouselBig3">
+        <div class="p-5 one animate fadeInUp" id="carouselcap">
+          <h2 class="text-primary text-uppercase">lace up & burn rubber!</h2>
+          <p class="fs-5 text-uppercase">goodyear half marathon & 10k</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev" style="margin-bottom: 80px">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next" style="margin-bottom: 80px">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Main Body Content-->
+  <div class="row row-cols-1 row-cols-lg-3 text-center align-items-center p-5 bg-secondary text-white text-uppercase">
+    <div class="d-none d-lg-block col-lg-4">
+      <h5>Akron marathon race series peresented by summa health</h5>
+    </div>
+    <div class="col-lg-4">
+      <h2>next event:</h2>
+    </div>
+    <div class="col-lg-4">
+      <h2 id="countdowntimer"></h2>
+    </div>
+  </div>
+  <div class="px-5 mx-auto">
+    <div class="my-5 d-none d-md-flex justify-content-around">
+      <button class="btn btn-secondary rounded-4 fw-bold text-uppercase text-white me-3 w-25">8K & 1 mile</button>
+      <button class="btn btn-warning rounded-4 fw-bold text-uppercase text-white mx-5 w-25">half marathon & 10k</button>
+      <button class="btn btn-primary rounded-4 fw-bold text-uppercase text-white ms-3 w-25">akron marathon,<br>half marathon &<br>team Relay</button>
+    </div>
+    <div>
+      <h2 class="text-primary text-uppercase mt-5">run the blue line!</h2>
+      <p>Since 2003, the FirstEnergy Akron Marathon, Half Marathon, & Team Relay has brought world-class running to the heart of the heartland. 
+        How do we do it? Unparalleled organization on-course and off, the best spectators cheering you on throughout the community, and a commitment 
+        to excellence ensure your race experience is top-notch.</p>
+      <div class="col text-center my-5">
+        <button class="btn btn-primary rounded-4 px-5 py-3" id="registerBtn"><h2>register now!</h2></button>
+      </div>
+    </div>
+      <div class="row row-cols-1 row-cols-lg-3 gap-3 mt-5 justify-content-center text-center flex-lg-nowrap">
+        <div class="col bg-secondary rounded-4 py-5 text-center overflow-auto">
+          <img src="images/race-1073-sponsor.png">
+          <h2 class="text-white py-5">8K & 1 Mile</h2>
+          <table class="table table-borderless text-white">
+            <tbody>
+              <tr>
+                <th scope="row">Where</th>
+                <td>University of Akron</td>
+              </tr>
+              <tr>
+                <th scope="row">When</th>
+                <td>June 23, 2023: 1 Mile<br>June 24, 2023: 8k</td>
+              </tr>
+              <tr>
+                <th scope="row">Race<br>Start</th>
+                <td>7:00 PM: 1 Mile<br>7:30 AM: 8k</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-light rounded-4 text-primary px-5 mt-4" id="learnBtn">LEARN MORE</button>
+        </div>
+        <div class="col bg-warning rounded-4 py-5 text-center">
+          <img src="images/race-1080-sponsor.png">
+          <h2 class="text-primary py-5">HALF<br>MARATHON &<br>10K</h2>
+          <table class="table table-borderless text-primary">
+            <tbody>
+              <tr>
+                <th scope="row">Where</th>
+                <td>Goodyear World<br>Headquarters</td>
+              </tr>
+              <tr>
+                <th scope="row">When</th>
+                <td>August 12, 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Race<br>Start</th>
+                <td>6:30 AM</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-light rounded-4 text-primary px-5 mt-4" id="learnBtn">LEARN MORE</button>
+        </div>
+        <div class="col bg-primary rounded-4 py-5 text-center overflow-auto">
+          <img src="images/race-1081-sponsor.png">
+          <h2 class="text-white py-5">AKRON MARATHON,<br>HALF MARATHON &<br>TEAM RELAY</h2>
+          <table class="table table-borderless text-white">
+            <tbody>
+              <tr>
+                <th scope="row">Where</th>
+                <td>Downtown Akron</td>
+              </tr>
+              <tr>
+                <th scope="row">When</th>
+                <td>September 30, 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Race<br>Start</th>
+                <td>7:00 AM</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-light rounded-4 text-primary px-5 mt-4">LEARN MORE</button>
+        </div>
+      </div>
+    <div class="row my-5 text-center">
+      <div class="col my-2">
+        <button class="btn btn-primary rounded-0 homepageBtns">donate</button>
+      </div>
+      <div class="col my-2">
+        <button class="btn btn-warning rounded-0 homepageBtns">volunteer</button>
+      </div>
+      <div class="col my-2">
+        <button class="btn btn-info rounded-0 homepageBtns">sponsors</button>
+      </div>
+      <div class="col my-2">
+        <button class="btn btn-secondary rounded-0 homepageBtns">results</button>
+      </div>
+    </div>
+    <div class="my-5">
+      <h3 class="text-uppercase text-primary">a big thank you to our amazing sponsors</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 flex-md-nowrap overflow-hidden text-center" id="sponsorcarouselwrapper">
+      <div class="col-4 my-2 d-none d-md-block">
+        <button class="btn btn-primary rounded-0 prev">donate</button>
+      </div>
+      <div class="col-4 my-2">
+        <button class="btn btn-warning rounded-0 current">volunteer</button>
+      </div>
+      <div class="col-4 my-2 d-none d-md-block">
+        <button class="btn btn-info rounded-0 next">sponsors</button>
+      </div>
+      <div class="col-4 my-2">
+        <button class="btn btn-secondary rounded-0 hidden">results</button>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <div class="container-fluid bg-primary mt-5">
+    <div class="row row-cols-1 row-cols-md-3 text-white mx-auto flex-md-nowrap py-5" 
+      style="padding-left: 10%; padding-right: 10%;">
+      <div class="col">
+        <p class="pb-4">Register Today<br>About Us</p>
+        <p class="pt-4">© 2022 Akron Marathon<br>Charitable Corporation</p>
+      </div>
+      <div class="col text-center">
+        <img src="images/logo-footer.png">
+        <div class="pt-1" id="footersocial">
+          <img src="images/social/icons8-facebook-48.png">
+          <img src="images/social/icons8-twitter-48.png">
+          <img src="images/social/icons8-instagram-48.png">
+          <img src="images/social/icons8-youtube-48.png">
+        </div>
+      </div>
+      <div class="col">
+        <table class="table table-borderless text-white">
+          <tbody>
+            <tr class="start-0">
+              <th scope="row"></th>
+              <td class="fs-3">Contact</td>
+            </tr>
+            <tr class="start-0">
+              <th scope="row"></th>
+              <td><img src="images/social/icons8-phone-24.png" class="pe-2">1.877.375.2786</td>
+            </tr>
+            <tr class="start-0">
+              <th scope="row"></th>
+              <td><img src="images/social/icons8-mail-24.png" class="pe-2">info@akronmarathon.org</td>
+            </tr>
+            <tr class="start-0 text-nowrap">
+              <th scope="row"></th>
+              <td><img src="images/social/icons8-home-24.png" class="pe-2">155 E. Voris St. Akron, Ohio 44311</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

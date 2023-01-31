@@ -1,0 +1,203 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  position: relative;
+}
+/*Navigation*/
+ul.dropdown-menu {
+  background-color: #004b8dc4;
+  border: none;
+}
+ul.dropdown-menu a {
+  color: white;
+}
+ul.dropdown-menu a:hover {
+  color: rgb(207, 207, 207);
+}
+li.dropdown a:hover {
+  background-color: transparent;
+}
+a.nav-link {
+  color: white;
+}
+#navImg {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+#smnavImg {
+  position: absolute;
+  z-index: 10;
+  scale: .45;
+  left: 40px;
+  top: -30px;
+}
+#navWrapper {
+  padding: 15px 0px;
+  width: 80%;
+}
+#mobilenavexpand {
+  z-index: 12;
+  width: 85%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.exposednav {
+  top: 80px;
+  transition: all ease-in 0.75s;
+  opacity: 1;
+}
+.hiddennav {
+  top: -950px;
+  transition: all ease-in 0.5s;
+  opacity: 0;
+}
+#mobilenavexpand button {
+  border: 0;
+  color: white;
+  background-color: transparent;
+}
+#mobilenavexpand button:hover {
+  color: rgb(207, 207, 207);
+  background-color: #00478471;
+}
+#contactdropdownmenu {
+  transform: translateX(-40px);
+}
+
+#registerBtn {
+  text-transform: uppercase;
+  color: white;
+  width: 55%;
+  font-size: 28px;
+}
+#learnBtn {
+  bottom: 20px;
+}
+button.homepageBtns {
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  height: 200px;
+  width: 200px;
+  border-top: 10px solid #004b8d;
+}
+button.homepageBtns:hover {
+  color: white;
+  border-top: 10px solid #004b8d;
+  text-decoration: underline;
+}
+#raceFloater {
+  text-transform: uppercase;
+  position: absolute;
+  color: #004b8d;
+  font-weight: bold;
+  font-size: 28px;
+  background-color: rgba(255, 255, 255, 0.719);
+  bottom: 0px;
+  left: 50px;
+  padding: 40px 40px;
+}
+/*Landing Carousel*/
+#carouselBig1 {
+  background: url(images/carousel/Akron_Marathon_Start_i.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 47vh;
+  overflow: hidden;
+}
+#carouselBig2 {
+  background: url(images/carousel/marathonimg2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 47vh;
+  overflow: hidden;
+}
+#carouselBig3 {
+  background: url(images/carousel/marathon3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 47vh;
+  overflow: hidden;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: .8;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: .8;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  background-color: white;
+  position: absolute;
+  margin-left: 50px;
+  bottom: 40px;
+}
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.current {
+  scale: 1.2;
+}
+.next, .prev {
+  opacity: .8;
+  scale: .8;
+  padding: 10px, 50px;
+}
+.hidden {
+  visibility: hidden;
+}
+#sponsorcarouselwrapper button {
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  height: 200px;
+  width: 200px;
+  border-top: 10px solid #004b8d;
+}
+
+#firstRace, #thirdRace {
+  border-color: #004b8d;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-radius: 0;
+}
