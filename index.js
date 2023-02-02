@@ -30,15 +30,3 @@ function mobileNav() {
   mobilenavcontrol.classList.replace("exposednav", "hiddennav");
 }
 
-// Sponsorship Carousel
-const previous = document.getElementsByClassName("prev");
-const current = document.getElementsByClassName("current");
-const next = document.getElementsByClassName("next");
-const hidden = document.getElementsByClassName("hidden");
-
-function carouselspin() {
-  previous.classList.replace("prev", "hidden");
-  current.classList.replace("current", "prev");
-  next.classList.replace("next", "current");
-  hidden.classList.replace("hidden", "next");
-}
